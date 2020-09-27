@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>To Do Application</title>
+</head>
+<body>
+<br>
+    <div class="container" id="header">
+        <div class="row">
+            <div class="col-12 col-md-12">
+                    <h1><button type="button" class="btn btn-secondary btn-lg btn-block">Graham's To Do List</button></h1>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="container" id=input-task-area>
+        <div class="row">
+            <div id="inputbar" class="col-9 col-md-9">
+                    <input type="text" class="form-control" placeholder="So what do you need to do?">
+            </div>
+            <div id="calendar" class="col-1 col-md-1">
+                        <button type="button" class="btn btn-outline-secondary">
+                        <svg class="bi bi-calendar" width="1.5em" height="1.5em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M14 0H2a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V2a2 2 0 00-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z" clip-rule="evenodd"/>
+                        <path fill-rule="evenodd" d="M6.5 7a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2zm-9 3a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2zm-9 3a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2zm3 0a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"/>
+                        </svg></button>
+            </div>
+            <div id="add-task-button" class="col-2 col-md-2">
+                    <button type="button" class="btn btn-outline-secondary">Add</button>
+            </div>
+        </div>  
+    </div>
+    <br>
+
+
+    </br>
+            
+    <div class="container" id="tasks">
+        <div class="row">
+            <div id="task-box" class="col-12 col-md-6">
+                <form id="t-box">
+                    <button id="tick" type="button" class="btn btn-outline-success">
+                        <svg class="bi bi-check-box" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M15.354 2.646a.5.5 0 010 .708l-7 7a.5.5 0 01-.708 0l-3-3a.5.5 0 11.708-.708L8 9.293l6.646-6.647a.5.5 0 01.708 0z" clip-rule="evenodd"/>
+                        <path fill-rule="evenodd" d="M1.5 13A1.5 1.5 0 003 14.5h10a1.5 1.5 0 001.5-1.5V8a.5.5 0 00-1 0v5a.5.5 0 01-.5.5H3a.5.5 0 01-.5-.5V3a.5.5 0 01.5-.5h8a.5.5 0 000-1H3A1.5 1.5 0 001.5 3v10z" clip-rule="evenodd"/>
+                        </svg>
+                    </button>
+                    <p id="task-detail">Task 1 - Something</p>
+                            <button id="cross" type="button" class="btn btn-outline-danger">Delete</button>
+                </form>
+            </div>
+            <div id="task-box" class="col-12 col-md-6">
+                    <form id="t-box">
+                        <button id="tick" type="button" class="btn btn-outline-success">
+                            <svg class="bi bi-check-box" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M15.354 2.646a.5.5 0 010 .708l-7 7a.5.5 0 01-.708 0l-3-3a.5.5 0 11.708-.708L8 9.293l6.646-6.647a.5.5 0 01.708 0z" clip-rule="evenodd"/>
+                            <path fill-rule="evenodd" d="M1.5 13A1.5 1.5 0 003 14.5h10a1.5 1.5 0 001.5-1.5V8a.5.5 0 00-1 0v5a.5.5 0 01-.5.5H3a.5.5 0 01-.5-.5V3a.5.5 0 01.5-.5h8a.5.5 0 000-1H3A1.5 1.5 0 001.5 3v10z" clip-rule="evenodd"/>
+                            </svg>
+                        </button>
+                        <p id="task-detail">Task 2 - Something else</p>
+                                <button id="cross" type="button" class="btn btn-outline-danger">Delete</button>
+                    </form>
+            </div>
+            <div id="task-box" class="col-12 col-md-6">
+                    <form id="t-box">
+                        <button id="tick" type="button" class="btn btn-outline-success">
+                            <svg class="bi bi-check-box" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M15.354 2.646a.5.5 0 010 .708l-7 7a.5.5 0 01-.708 0l-3-3a.5.5 0 11.708-.708L8 9.293l6.646-6.647a.5.5 0 01.708 0z" clip-rule="evenodd"/>
+                            <path fill-rule="evenodd" d="M1.5 13A1.5 1.5 0 003 14.5h10a1.5 1.5 0 001.5-1.5V8a.5.5 0 00-1 0v5a.5.5 0 01-.5.5H3a.5.5 0 01-.5-.5V3a.5.5 0 01.5-.5h8a.5.5 0 000-1H3A1.5 1.5 0 001.5 3v10z" clip-rule="evenodd"/>
+                            </svg>
+                        </button>
+                        <p id="task-detail">Task 3 - Something else</p>
+                                <button id="cross" type="button" class="btn btn-outline-danger">Delete</button>
+                    </form>
+            </div>
+            <div id="task-box" class="col-12 col-md-6">
+                    <form id="t-box">
+                        <button id="tick" type="button" class="btn btn-outline-success">
+                            <svg class="bi bi-check-box" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M15.354 2.646a.5.5 0 010 .708l-7 7a.5.5 0 01-.708 0l-3-3a.5.5 0 11.708-.708L8 9.293l6.646-6.647a.5.5 0 01.708 0z" clip-rule="evenodd"/>
+                            <path fill-rule="evenodd" d="M1.5 13A1.5 1.5 0 003 14.5h10a1.5 1.5 0 001.5-1.5V8a.5.5 0 00-1 0v5a.5.5 0 01-.5.5H3a.5.5 0 01-.5-.5V3a.5.5 0 01.5-.5h8a.5.5 0 000-1H3A1.5 1.5 0 001.5 3v10z" clip-rule="evenodd"/>
+                            </svg>
+                        </button>
+                        <p id="task-detail">Task 4 - Something else</p>
+                                <button id="cross" type="button" class="btn btn-outline-danger">Delete</button>
+                    </form>
+            </div>
+            <div id="task-box" class="col-12 col-md-6">
+                    <form id="t-box">
+                        <button id="tick" type="button" class="btn btn-outline-success">
+                            <svg class="bi bi-check-box" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M15.354 2.646a.5.5 0 010 .708l-7 7a.5.5 0 01-.708 0l-3-3a.5.5 0 11.708-.708L8 9.293l6.646-6.647a.5.5 0 01.708 0z" clip-rule="evenodd"/>
+                            <path fill-rule="evenodd" d="M1.5 13A1.5 1.5 0 003 14.5h10a1.5 1.5 0 001.5-1.5V8a.5.5 0 00-1 0v5a.5.5 0 01-.5.5H3a.5.5 0 01-.5-.5V3a.5.5 0 01.5-.5h8a.5.5 0 000-1H3A1.5 1.5 0 001.5 3v10z" clip-rule="evenodd"/>
+                            </svg>
+                        </button>
+                        <p id="task-detail">Task 5 - Something else</p>
+                                <button id="cross" type="button" class="btn btn-outline-danger">Delete</button>
+                    </form>
+            </div>
+            <div id="task-box" class="col-12 col-md-6">
+                    <form id="t-box">
+                        <button id="tick" type="button" class="btn btn-outline-success">
+                            <svg class="bi bi-check-box" width="2em" height="2em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M15.354 2.646a.5.5 0 010 .708l-7 7a.5.5 0 01-.708 0l-3-3a.5.5 0 11.708-.708L8 9.293l6.646-6.647a.5.5 0 01.708 0z" clip-rule="evenodd"/>
+                            <path fill-rule="evenodd" d="M1.5 13A1.5 1.5 0 003 14.5h10a1.5 1.5 0 001.5-1.5V8a.5.5 0 00-1 0v5a.5.5 0 01-.5.5H3a.5.5 0 01-.5-.5V3a.5.5 0 01.5-.5h8a.5.5 0 000-1H3A1.5 1.5 0 001.5 3v10z" clip-rule="evenodd"/>
+                            </svg>
+                        </button>
+                        <p id="task-detail">Task 6 - Something else</p>
+                                <button id="cross" type="button" class="btn btn-outline-danger">Delete</button>
+                    </form>
+            </div>
+        </div>
+    </div>      
+    
+    <br>
+
+    </br>
+    <div class="container">    
+        <div id="footer" class="row">
+            <div class="col-12 col-md-12">
+                <h2><button type="button" class="btn btn-info btn-lg btn-block">Outstanding Tasks: [4]</button></h2>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

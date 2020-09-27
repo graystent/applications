@@ -1,0 +1,43 @@
+#inputbar {float:left;}
+#calendar {padding-left : 20px;float:left;}
+#add-task-button {padding-left : 40px;float:left;}
+
+#header{
+  text-align: center;
+  opacity: 0.75
+}
+
+
+#footer {
+  text-align: center;
+  opacity: 0.75
+}
+
+#task-box {
+  border: 2px;
+  border-radius: 25px;
+  background: lightpink
+  padding: 20px;
+  width: 200px;
+  height: 100px;
+}
+
+#tick {float:left;}
+#task-detail {padding-left : 10px;float:left;}
+#cross {padding-left : 20px;float:right;}
+
+
+@media only screen and (max-width: 575px) {
+    body {
+      margin-left: 20px;
+      background-color: whitesmoke;
+      color: gray
+    }
+}
+@media only screen and (min-width: 576px) {
+    body {
+      margin-left: 20px;
+      background-color:  whitesmoke;
+      color:  gray
+    }
+}
