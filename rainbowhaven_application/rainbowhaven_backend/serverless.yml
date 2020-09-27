@@ -1,0 +1,44 @@
+
+service: rainbowhaven
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+  region: eu-west-2
+
+functions:
+  tasks:
+    handler: tasks.handler
+    environment:
+      dataBaseHost: ${opt:dataBaseHost}
+      dataBaseUser: ${opt:dataBaseUser}
+      dataBasePassword: ${opt:dataBasePassword}
+    events:
+      - http:
+          path: items
+          method: get
+          cors: true
+      - http:
+          path: volunteers
+          method: get
+          cors: true
+      - http:
+          path: items
+          method: post
+          cors: true
+      - http:
+          path: volunteer
+          method: post
+          cors: true
+      - http:
+          path: items/{client_id}
+          method: delete
+          cors: true
+      - http:
+          path: volunteer/{volunteer_Id}
+          method: delete
+          cors: true
+      - http:
+          path: items/{client_id}
+          method: put
+          cors: true
