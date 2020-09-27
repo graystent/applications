@@ -1,0 +1,46 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+/* .App-header {
+  background-color: #485c85;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+} */
+
+.App {
+  background-image: url(./images/bigBalloon.jpg);
+  min-height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center;
+  background-size: cover;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.navbar {
+  height: 7%;
+  opacity: 0.8;
+  filter: (opacity=80);
+}
+
+ul.nav > li {
+  display: inline-block;
+  padding-left: 10px;
+}
+
+.nav {
+  display: inline-block;
+}

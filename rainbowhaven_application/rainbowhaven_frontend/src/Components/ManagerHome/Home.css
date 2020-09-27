@@ -1,0 +1,70 @@
+body {
+  color: #553e65;
+  font-weight: bolder;
+  background-color: #edf0f2;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home_body {
+  margin-top: -745px;
+}
+
+.Item__border {
+  width: 100%;
+  margin: 1vw 0;
+  border-bottom: 10px solid;
+  border-image-source: linear-gradient(45deg, #503ab7, #553e65);
+  border-image-slice: 1;
+}
+
+/* Navbar */
+.nav-link {
+  color: #503ab7;
+}
+
+/* TaskItem */
+.Item__card {
+  background: #edf9f2;
+  box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.56);
+  transition: all ease 500ms;
+}
+
+.Item__card-title {
+  color: #3c565c;
+}
+
+.Item__button {
+  background: #533c8e;
+  box-shadow: 2px 1px 2px gray;
+}
+
+.complete {
+  text-decoration: line-through;
+}
+
+.Item__card:hover {
+  transform: scale(1.05);
+}
+
+.card-body {
+  text-align: left;
+}
+
+.fa {
+  color: #edf0f2;
+}
+
+/* Add Item */
+
+.AddItem__card {
+  background: #edf9f2;
+  box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.56);
+}
+
+/* ListVolunteers */
+.Volunteer__card {
+  background-color: #a0b3c7;
+  box-shadow: 7px 10px 12px -5px rgba(0, 0, 0, 0.56);
+  transition: all ease 500ms;
+}

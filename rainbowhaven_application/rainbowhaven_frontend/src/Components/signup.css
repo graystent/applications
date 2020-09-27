@@ -1,0 +1,54 @@
+.btn-login {
+  color: #ffffff !important;
+  background-color: #533c8e;
+  border-color: #533c8e;
+}
+
+.btn-login:hover,
+.btn-login:focus,
+.btn-login:active,
+.btn-login.active,
+.open .dropdown-toggle.btn-login {
+  color: #ffffff;
+  background-color: #533c8e;
+  border-color: #533c8e;
+}
+
+.btn-login:active,
+.btn-login.active,
+.open .dropdown-toggle.btn-login {
+  background-image: none;
+}
+
+.btn-login.disabled,
+.btn-login[disabled],
+fieldset[disabled] .btn-login,
+.btn-login.disabled:hover,
+.btn-login[disabled]:hover,
+fieldset[disabled] .btn-login:hover,
+.btn-login.disabled:focus,
+.btn-login[disabled]:focus,
+fieldset[disabled] .btn-login:focus,
+.btn-login.disabled:active,
+.btn-login[disabled]:active,
+fieldset[disabled] .btn-login:active,
+.btn-login.disabled.active,
+.btn-login[disabled].active,
+fieldset[disabled] .btn-login.active {
+  background-color: #533c8e;
+  border-color: #533c8e;
+}
+
+.btn-login .badge {
+  color: #533c8e;
+  background-color: #ffffff;
+}
+
+a:link,
+a:visited {
+  color: #503ab7;
+}
+
+.registration-form {
+  opacity: 0.9;
+}
