@@ -1,0 +1,16 @@
+.input-bar {
+    float:left;
+}
+
+.calendar {
+    padding-left : 10px;
+    justify-content: space-between;
+}
+
+.add-task-button {
+    display: right;
+}
+
+
+@media only screen and (min-width:576px) {
+} 

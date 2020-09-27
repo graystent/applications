@@ -1,0 +1,45 @@
+.task-item__done-button {
+    float:left;
+}
+.task-item__text {
+    padding-left : 5px;
+    float:left;
+}
+
+.task-item__delete-button {
+    padding-left : 15px;
+    float:right;
+}
+
+.task-item__due-date {
+    font-size: small;
+    text-align: right
+}
+
+.row {
+    margin-bottom: 10px;
+  }
+
+.text {
+    text-align: left;
+    font-size: medium;
+}
+
+.task--complete .task-item__text{
+    text-decoration: line-through;
+}
+
+@media only screen and (max-width: 575px) {
+    body {
+      margin-left: 20px;
+      background-color: whitesmoke;
+      color: gray
+    }
+}
+@media only screen and (min-width: 576px) {
+    body {
+      margin-left: 20px;
+      background-color:  whitesmoke;
+      color:  gray
+    }
+}
